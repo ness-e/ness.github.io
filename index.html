@@ -31,115 +31,58 @@
 
 <body>
   <div id="app">
-    <!-- Your main view, should have "view-main" class -->
-    <div class="view view-main view-init safe-areas">
-      <div class="page" data-name="home">
-        <!-- Top Navbar -->
-        <div class="navbar navbar-large">
+    <!-- Appbar -->
+    <div class="appbar">
+      <div class="appbar-inner">
+        <div class="left">
+          <a href="#" class="button button-small panel-toggle display-flex" data-panel="left">
+            <i class="f7-icons">bars</i>
+          </a>
+          <a href="#" class="button button-small display-flex margin-left-half">
+            <i class="f7-icons">arrowshape_turn_up_left_fill</i>
+          </a>
+          <a href="#" class="button button-small display-flex margin-left-half">
+            <i class="f7-icons">arrowshape_turn_up_right_fill</i>
+          </a>
+        </div>
+        <div class="right">
+          <div class="searchbar searchbar-inline">
+            <div class="searchbar-input-wrap">
+              <input type="text" placeholder="Search app" />
+              <i class="searchbar-icon"></i>
+              <div class="input-clear-button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Rest of the app -->
+    <div class="panel panel-left panel-cover panel-init">
+      <div class="block">
+        <p>Panel left content</p>
+      </div>
+    </div>
+    <div class="view view-main view-init">
+      <div class="page">
+        <div class="navbar">
           <div class="navbar-bg"></div>
           <div class="navbar-inner">
-
-            <div class="title sliding">ApManga</div>
-
-            <div class="title-large">
-              <div class="title-large-text">ApManga</div>
-            </div>
+            <div class="title">Appbar</div>
           </div>
         </div>
-        <!-- Bottom Toolbar -->
-        <div class="toolbar toolbar-bottom">
-          <div class="toolbar-inner">
-            <!-- Toolbar links -->
-            <a href="/pregunta0/" class="disabled"><i class="f7-icons">arrow_left</i></a>
-            <a href="/pregunta1/" class=""><i class="f7-icons">arrow_right</i></a>
-          </div>
-        </div>
-        <!-- Scrollable page content-->
         <div class="page-content">
-          <div class="page">
-            <div class="navbar">
-              <div class="navbar-bg"></div>
-              <div class="navbar-inner">
-                <div class="title">Block</div>
-              </div>
-            </div>
-            <div class="page-content">
-              <p>This paragraph is outside of content block. Not cool, but useful for any custom elements with custom
-                styling.</p>
-              <div class="block">
-                <p>Here comes paragraph within content block. Donec et nulla auctor massa pharetra adipiscing ut sit amet
-                  sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel,
-                  sagittis felis. </p>
-              </div>
-              <div class="block block-strong">
-                <p>Here comes another text block with additional "<b>block-strong</b>" class. Praesent nec imperdiet diam.
-                  Maecenas vel lectus porttitor, consectetur magna nec, viverra sem. Aliquam sed risus dolor. Morbi
-                  tincidunt ut libero id sodales. Integer blandit varius nisi quis consectetur. </p>
-              </div>
-              <div class="block-title">Block title</div>
-              <div class="block">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-              <div class="block-title">Another ultra long content block title</div>
-              <div class="block block-strong">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-              <div class="block-title">Inset</div>
-              <div class="block block-strong inset">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-              <div class="block-title">Tablet Inset</div>
-              <div class="block block-strong medium-inset">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-              <div class="block-title">With Header & Footer</div>
-              <div class="block">
-                <div class="block-header">Block Header</div>
-                <p>Here comes paragraph within content block. Donec et nulla auctor massa pharetra adipiscing ut sit amet
-                  sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel,
-                  sagittis felis. </p>
-                <div class="block-footer">Block Footer</div>
-              </div>
-              <div class="block-header">Block Header</div>
-              <div class="block">
-                <p>Here comes paragraph within content block. Donec et nulla auctor massa pharetra adipiscing ut sit amet
-                  sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel,
-                  sagittis felis. </p>
-              </div>
-              <div class="block-footer">Block Footer</div>
-              <div class="block block-strong">
-                <div class="block-header">Block Header</div>
-                <p>Here comes paragraph within content block. Donec et nulla auctor massa pharetra adipiscing ut sit amet
-                  sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel,
-                  sagittis felis. </p>
-                <div class="block-footer">Block Footer</div>
-              </div>
-              <div class="block-header">Block Header</div>
-              <div class="block block-strong">
-                <p>Here comes paragraph within content block. Donec et nulla auctor massa pharetra adipiscing ut sit amet
-                  sem. Suspendisse molestie velit vitae mattis tincidunt. Ut sit amet quam mollis, vulputate turpis vel,
-                  sagittis felis. </p>
-              </div>
-              <div class="block-footer">Block Footer</div>
-              <div class="block-title block-title-large">Block Title Large</div>
-              <div class="block block-strong">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-              <div class="block-title block-title-medium">Block Title Medium</div>
-              <div class="block block-strong">
-                <p>Donec et nulla auctor massa pharetra adipiscing ut sit amet sem. Suspendisse molestie velit vitae mattis
-                  tincidunt. Ut sit amet quam mollis, vulputate turpis vel, sagittis felis. </p>
-              </div>
-            </div>
+          <div class="block block-strong">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed sagittis dui. Fusce nulla massa,
+              scelerisque vitae auctor in, luctus in ipsum. Sed eu lectus vel magna malesuada lacinia. Ut at vestibulum
+              sem. In semper, arcu pulvinar volutpat fermentum, felis magna fringilla felis, nec volutpat nisi nunc quis
+              ante. Fusce elementum egestas tortor ut porta. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia Curae; Duis id commodo elit. Sed massa dui, laoreet a orci sed, egestas vehicula
+              tellus. Nulla pulvinar ornare justo sed finibus. Aliquam hendrerit dui at nulla eleifend, quis feugiat
+              enim aliquam. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+              ridiculus mus.</p>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
