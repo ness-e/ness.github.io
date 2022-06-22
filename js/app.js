@@ -12,7 +12,6 @@ var app = new Framework7({
   // App routes
   routes: routes,
 
-
   // Input settings
   input: {
     scrollIntoViewOnFocus: device.cordova && !device.electron,
@@ -44,3 +43,13 @@ $('#my-login-screen .login-button').on('click', function () {
   // Alert username and password
   app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
 });
+
+
+var calendar = app.calendar.create({
+  inputEl: '#demo-calendar-date-time',
+  timePicker: true,
+  dateFormat: { month: 'numeric', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric' },
+});
+
+
+
