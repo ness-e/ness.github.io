@@ -14,8 +14,9 @@ var routes = [
     options: {
       transition: 'f7-cover',
     },
-
-  },
+    
+  
+  }, 
 
   {
     name: 'pregunta2',

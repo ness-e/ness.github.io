@@ -1,0 +1,352 @@
+<body>
+    <div id="app" class="framework7-root">
+        <div class="appbar">
+            <div class="appbar-inner row md">
+                <div class="left">
+                    <a id="icon_GPS" href="#" class="button button-small panel-toggle display-flex" data-panel="left"
+                        style="color: rgb(64, 64, 64);"><i id="icono_top_gps"
+                            class="material-icons md-only">where_to_vote</i></a>
+                    <a id="icon_MIC" href="#" class="button button-small display-flex margin-left-half"><i
+                            id="icono_top_mic" class="material-icons md-only">mic</i></a>
+                    <a id="icon_DOW" href="#" class="button button-small display-flex margin-left-half"><i
+                            id="icono_top_download" class="material-icons md-only">download</i></a>
+                </div>
+                <div class="block-title-medium"><span id="contPags">4 / 7</span></div>
+                <div class="right">
+                    <a id="icon_NOT" href="#" class="button button-small display-flex margin-left-half"><i
+                            class="material-icons md-only">edit_note</i></a>
+                    <a id="icon_INF" href="#" class="button button-small display-flex margin-left-half"><i
+                            class="material-icons md-only">info</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="view view-main view-init">
+
+            <div class="page page-previous" data-name="Pag_SECTION3">
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a style="cursor:pointer;" id="Btn_Ant_Sup_4" class="button button-large back"><i
+                                    class="f7-icons size-20">chevron_left</i></a>
+                        </div>
+                        <div class="title">
+                            <a class="button button-round button-fill button-small color-gray" href="/Pag_Prueba/"
+                                id="btnModoPrueba4" style="">&nbsp;Testear a partir...&nbsp;</a>
+                        </div>
+                        <div class="right">
+                            <a style="cursor:pointer;" id="Btn_Sig_Sup_4" onclick="Submitir_(4,true)" class=""><i
+                                    class="f7-icons size-20">chevron_right</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Footer" class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                        <div class="left">
+                            <a style="cursor:pointer;" id="Btn_Ant_Inf_4" class="button button-large back"><i
+                                    class="f7-icons size-20">chevron_left</i></a>
+                        </div>
+                        <div class="right">
+                            <a style="cursor:pointer;" id="Btn_Sig_Inf_4" onclick="Submitir_(4,true)"><i
+                                    class="f7-icons size-20">chevron_right</i></a>
+                        </div>
+                        <div class="title">
+                            <a style="cursor: pointer;" onclick="EntrevistaSuspender()"
+                                id="Suspend">Suspender&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;" onclick="EntrevistaPostponer()">Postponer&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;" onclick="EntrevistaCancelar(true)">Cancelar&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;display:none;" id="BtnGoToEnd" onclick="SalvarYSalir()">Guardar y
+                                salir&nbsp;&nbsp;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="block-title">
+                        <h2 id="TextoPreg_6">P.13. MARCA B {*Duplicado*}</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <ul id="V50" style="" ;="">
+                                <li id="wrap_V50_1" class="">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V50" id="V50_1" value="1">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V50_1">
+                                                &nbsp;ZAPO
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V50_2" class="">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V50" id="V50_2" value="2">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V50_2">
+                                                &nbsp;RUKO
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V50_3" class="">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V50" id="V50_3" value="3">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V50_3">
+                                                &nbsp;RIKO
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V50_4" class="">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V50" id="V50_4" value="4">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V50_4">
+                                                &nbsp;REY
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V50_5" class="">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V50" id="V50_5" value="5">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V50_5">
+                                                &nbsp;RECO
+                                            </span></div>
+                                    </label>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="block-title">
+                        <h2 id="TextoPreg_7">Q.9. hierarquicvo ✱</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <ul id="V44" style="" ;="">
+                                <li id="wrap_V44_1" class="">
+                                    <label class="item-checkbox item-content">
+                                        <div class="item-inner"><span id="Span_V44_1">
+                                                &nbsp;CARACAS
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_2" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_2" value="2"
+                                            onclick="DespliegaOtroSiAplica('V44','2');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_2">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;CHACHO
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_3" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_3" value="3"
+                                            onclick="DespliegaOtroSiAplica('V44','3');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_3">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;BARIRTA
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_4" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_4" value="4"
+                                            onclick="DespliegaOtroSiAplica('V44','4');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_4">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;LIBERTADPR
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_5" class="">
+                                    <label class="item-checkbox item-content">
+                                        <div class="item-inner"><span id="Span_V44_5">
+                                                &nbsp;MERICA
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_6" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_6" value="6"
+                                            onclick="DespliegaOtroSiAplica('V44','6');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_6">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;ZONA 1
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_7" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_7" value="7"
+                                            onclick="DespliegaOtroSiAplica('V44','7');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_7">
+                                                &nbsp;&nbsp;&nbsp;&nbsp;ZONA 2
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_8" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_8" value="8"
+                                            onclick="DespliegaOtroSiAplica('V44','8');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_8">
+                                                &nbsp;NO SABE
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V44_9" class="">
+                                    <label class="item-checkbox item-content">
+                                        <input type="checkbox" name="V44[]" id="V44_9" value="9"
+                                            onclick="DespliegaOtroSiAplica('V44','9');">
+                                        <i class="icon icon-checkbox"></i>
+                                        <div class="item-inner"><span id="Span_V44_9">
+                                                &nbsp;OTRA ESPEC
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="Otro_Esp_V46" style="display:none;" class="">
+                                    <div class="list">
+                                        <ul>
+                                            <li class="item-content item-input">
+                                                <div class="item-media"><i class="f7-icons size-20">pencil</i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-input-wrap">
+                                                        <input type="text" id="V46" name="V46" autocomplete="off">
+                                                        <span class="input-clear-button"></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="page page-current" data-name="Pag_SECTION4">
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="left" style="
+      margin-right: auto;
+  ">
+                            <a style="cursor:pointer;" id="Btn_Ant_Sup_5" class="button button-large back"><i
+                                    class="f7-icons size-20">chevron_left</i></a>
+                        </div>
+                        <div class="title" style="
+      margin: auto;
+  ">
+                            <a class="button button-round button-fill button-small color-gray" href="/Pag_Prueba/"
+                                id="btnModoPrueba5" style="">&nbsp;Testear a partir...&nbsp;</a>
+                        </div>
+
+                        <div class="right">
+                            <a style="cursor:pointer;" id="Btn_Sig_Sup_5" onclick="Submitir_(5,true)"><i
+                                    class="f7-icons size-20">chevron_right</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="Footer" class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                        <div class="left">
+                            <a style="cursor:pointer;" id="Btn_Ant_Inf_5" class="button button-large back"><i
+                                    class="f7-icons size-20">chevron_left</i></a>
+                        </div>
+                        <div class="title">
+                            <a style="cursor: pointer;" onclick="EntrevistaSuspender()"
+                                id="Suspend">Suspender&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;" onclick="EntrevistaPostponer()">Postponer&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;" onclick="EntrevistaCancelar(true)">Cancelar&nbsp;&nbsp;</a>
+                            <a style="cursor: pointer;display:none;" id="BtnGoToEnd" onclick="SalvarYSalir()">Guardar y
+                                salir&nbsp;&nbsp;</a>
+                        </div>
+
+                        <div class="right">
+                            <a style="cursor:pointer;" id="Btn_Sig_Inf_5" onclick="Submitir_(5,true)"><i
+                                    class="f7-icons size-20">chevron_right</i></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="block-title">
+                        <h2 id="TextoPreg_8">P2. cigarro2 y me dices porque CHACHO</h2>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <ul id="V31" style="" ;="">
+                                <li id="wrap_V31_4" class="ModRandomIni_33">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V31" id="V31_4" value="4"
+                                            onclick="gotoProxPag(5,'V31','4')">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V31_4">
+                                                &nbsp;Camel
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V31_1" class="ModRandomIni_33">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V31" id="V31_1" value="1"
+                                            onclick="gotoProxPag(5,'V31','1')">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V31_1">
+                                                &nbsp;kool
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V31_3" class="ModRandomIni_33">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V31" id="V31_3" value="3"
+                                            onclick="gotoProxPag(5,'V31','3')">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V31_3">
+                                                &nbsp;belmont
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V31_2" class="ModRandomIni_33">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V31" id="V31_2" value="2"
+                                            onclick="gotoProxPag(5,'V31','2')">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V31_2">
+                                                &nbsp;astor
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="wrap_V31_5" class="ModRandomFinal_33">
+                                    <label class="item-radio item-radio-icon-start item-content">
+                                        <input type="radio" name="V31" id="V31_5" value="5"
+                                            onclick="DespliegaOtroSiAplica('V31','5');">
+                                        <i class="icon icon-radio"></i>
+                                        <div class="item-inner"><span id="Span_V31_5" class="">
+                                                &nbsp;Otro indiqe
+                                            </span></div>
+                                    </label>
+                                </li>
+                                <li id="Otro_Esp_V41" style="" class="ModRandomFinal_33">
+                                    <div class="list">
+                                        <ul>
+                                            <li class="item-content item-input">
+                                                <div class="item-media"><i class="f7-icons size-20">pencil</i></div>
+                                                <div class="item-inner">
+                                                    <div class="item-input-wrap">
+                                                        <input type="text" id="V41" name="V41" autocomplete="off">
+                                                        <span class="input-clear-button"></span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

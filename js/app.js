@@ -17,7 +17,8 @@ var app = new Framework7({
     scrollIntoViewOnFocus: device.cordova && !device.electron,
     scrollIntoViewCentered: device.cordova && !device.electron,
   },
-  // Cordova Statusbar settings
+ 
+  // ordova Statusbar settings
   statusbar: {
     iosOverlaysWebView: true,
     androidOverlaysWebView: false,
@@ -30,7 +31,9 @@ var app = new Framework7({
         cordovaApp.init(f7);
       }
     },
-  },
+    
+  }, 
+  
 });
 // Login Screen Demo
 $('#my-login-screen .login-button').on('click', function () {
@@ -44,12 +47,6 @@ $('#my-login-screen .login-button').on('click', function () {
   app.dialog.alert('Username: ' + username + '<br/>Password: ' + password);
 });
 
-
-var calendar = app.calendar.create({
-  inputEl: '#demo-calendar-date-time',
-  timePicker: true,
-  dateFormat: { month: 'numeric', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric' },
-});
 
 
 

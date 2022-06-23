@@ -63,6 +63,11 @@
             qui. Laboriosam aut tempora ullam quos eum alias!
 
           </div>
+
+          <button class="col button button-fill" onclick="Ocultar_input();">Button</button>
+          <div id="container">
+          <input type="time"  />
+        </div>
           <div class="block-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus autem ducimus ab
             doloremque odio aspernatur repellendus illum amet illo, assumenda harum ipsum expedita quasi facere nisi,
             magnam porro similique, provident reprehenderit repudiandae quae dolorem maiores. Itaque quia molestias nam
@@ -86,7 +91,7 @@
 
 
       </div>
-    </div>
+    </div>  
   </div>
 
 
@@ -134,7 +139,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div>
   </div>
   <!-- CORDOVA_PLACEHOLDER_DONT_REMOVE -->
@@ -147,9 +152,13 @@
   <script src="js/routes.js"></script>
   <!-- App store -->
   <script src="js/store.js"></script>
-  <!-- App scripts -->
+  <!-- App scripts --> 
   <script src="js/app.js"></script>
+<script>function Ocultar_input(){
 
+  document.getElementById("container").style.display="none";
+  };
+</script>
 </body>
 
 </html>
